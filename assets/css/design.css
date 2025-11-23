@@ -1,0 +1,353 @@
+/* --- GLOBAL VARIABLES --- */
+:root {
+    --barangay-blue: #2cb5e8; 
+    --barangay-dark: #1fa0d0;
+    --nav-bg: #ffffff;
+    --nav-text: #2c3e50;
+    --white: #ffffff;
+    --light-gray: #f0f2f5;
+}
+
+/* --- BODY & LAYOUT --- */
+body {
+    background-color: var(--barangay-blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* =========================================
+   2. AUTHENTICATION PAGES (Login/Register)
+   ========================================= */
+/* Wrapper to center the card perfectly on the screen */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; /* Default width */
+    text-align: center;
+}
+
+/* Wider card for Register page */
+.auth-card.register {
+    max-width: 550px; 
+}
+
+.auth-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--barangay-blue);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.auth-title {
+    color: var(--text-dark);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.auth-subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.btn-auth {
+    background-color: var(--barangay-blue);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    transition: all 0.3s;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.btn-auth:hover {
+    background-color: var(--barangay-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #666;
+}
+
+.auth-footer a {
+    color: var(--barangay-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+.auth-footer a:hover { text-decoration: underline; }
+
+/* --- NAVIGATION BAR --- */
+.navbar-custom {
+    background-color: var(--nav-bg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--barangay-blue) !important;
+}
+
+.nav-link {
+    color: var(--nav-text) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--barangay-blue) !important;
+}
+
+/* --- MAIN CARD CONTAINER --- */
+.main-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.card-header-custom {
+    background-color: var(--white);
+    border-bottom: 1px solid #f0f0f0;
+    padding: 25px;
+    text-align: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--barangay-blue);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* --- FORMS & INPUTS --- */
+.form-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.form-control, .form-select {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--barangay-blue);
+    box-shadow: 0 0 0 3px rgba(44, 181, 232, 0.25);
+    outline: none;
+}
+
+/* --- BUTTONS --- */
+/* Standard Submit/Search Button */
+.search-btn{
+    background-color: var(--barangay-blue);
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.search-btn:hover{
+    background-color: var(--barangay-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Action Buttons in Table */
+.btn-warning {
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: var(--barangay-blue);
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px; /* Pill Shape */
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(44, 181, 232, 0.3);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-submit:hover {
+    background-color: var(--barangay-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(44, 181, 232, 0.4);
+}
+
+/* 2. Edit/Update Button (Orange) */
+.btn-update {
+    background-color: #f39c12; /* Orange */
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px; /* Pill Shape */
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(243, 156, 18, 0.3);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-update:hover {
+    background-color: #e67e22; /* Darker Orange */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(243, 156, 18, 0.4);
+}
+
+/* 3. Cancel/Back Button (Gray) */
+.btn-back {
+    background-color: #95a5a6; /* Gray */
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px; /* Pill Shape */
+    width: 100%;
+    display: block; /* Makes it a block for width */
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(149, 165, 166, 0.3);
+    font-size: 16px;
+}
+
+.btn-back:hover {
+    background-color: #7f8c8d; /* Darker Gray */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(149, 165, 166, 0.4);
+}
+
+/* --- TABLE STYLES --- */
+.table-responsive {
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid #eee;
+}
+
+.table-head-custom {
+    background-color: var(--barangay-blue);
+    border: none;
+}
+
+/* Fix for Table Header Hover Issue */
+.table-head-custom th {
+    background-color: var(--barangay-blue) !important;
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 15px 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+    pointer-events: none; /* Stops hover effect on header */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f0f9ff;
+}
+
+td {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #444;
+    padding: 12px 10px;
+    white-space: nowrap;
+}
+
+.status-badge {
+    color: var(--barangay-blue);
+    font-weight: 700;
+    background: rgba(44, 181, 232, 0.1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* --- PAGINATION --- */
+.page-item.active .page-link {
+    background-color: var(--barangay-blue);
+    border-color: var(--barangay-blue);
+    color: white;
+}
+
+.page-link {
+    color: #555;
+    border: 1px solid #dee2e6;
+    margin: 0 2px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.page-link:hover {
+    background-color: #f8f9fa;
+    color: var(--barangay-blue);
+}
