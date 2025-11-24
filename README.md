@@ -110,6 +110,4 @@ To achieve this and implement this project in this area, do the following:
 <img width="1832" height="1324" alt="image" src="https://github.com/user-attachments/assets/5bf9b681-74ce-4de3-9ecf-234ba63cbc13" />
 </details>
 
----
-**Developed by Eman Ryan L. Aguilera**
-*Academic Coursework: Content Management Systems & Database Configuration*
+
