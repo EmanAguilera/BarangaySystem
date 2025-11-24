@@ -100,13 +100,14 @@ To set up and run this project locally, execute the following steps:
 
 **Central Records Dashboard**
 > The main view for the Secretary/Chairman featuring search, filtering, and pagination.
-<img width="100%" alt="Resident Records Table" src="https://github.com/user-attachments/assets/dfb1aa7b-fd41-4184-976c-5a3789e31600" />
+<img width="1832" height="1324" alt="image" src="https://github.com/user-attachments/assets/5dce65eb-1f2b-4392-876c-8fab3d4d3f2a" />
+
 
 <br>
 
 **Record Maintenance (Edit Mode)**
 > Interface for updating existing resident information with pre-filled data.
-<img width="100%" alt="Edit Record Interface" src="https://github.com/user-attachments/assets/9eb851ee-d2de-46d3-83ac-236c61767441" />
+<img width="1832" height="1324" alt="image" src="https://github.com/user-attachments/assets/5bf9b681-74ce-4de3-9ecf-234ba63cbc13" />
 </details>
 
 ---
