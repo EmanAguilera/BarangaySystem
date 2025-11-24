@@ -40,31 +40,31 @@ The platform focuses on administrative efficiency and data security, featuring a
 
 ## ⚙️ Local Installation Guide
 
-To set up and run this project locally, execute the following steps:
+To achieve this and implement this project in this area, do the following:
 
-1.  **Prerequisites:** Ensure **XAMPP** is installed and operational.
+1.  **Prerequisites:** Make XAMPP installed and running.
 
 2.  **Clone the repository:**
     ```bash
     git clone https://github.com/EmanAguilera/BarangaySystem.git
     ```
 
-3.  **File Placement:** Place the cloned `BarangaySystem` folder within the XAMPP `htdocs` directory.
+3.  **File Placement:** Move the BarangaySystem folder that was cloned to the XAMPP htdocs folder.
 
-4.  **Start Services:** Initiate the **Apache** and **MySQL** modules via the XAMPP Control Panel.
+4.  **Start Services:** **Apache** and **MySQL** modules start using the XAMPP Control Panel.
 
 5.  **Database Setup:**
-    - Access phpMyAdmin by clicking the **Admin** button for MySQL.
-    - Create a new database named `php_connection` (matches the project config).
-    - Select the database and navigate to the **Import** tab.
-    - Select the `.sql` file located in the project's `/database` folder.
-    - Click **Import** to populate the necessary tables and data.
+    - MySQL phpMyAdmin Click the **Admin** button and access phpMyAdmin.
+    - The new database will be called php-connection (this is suitable to the project setup).
+    - Open the database and choose the tab **Import**.
+    - Choose the.sql file in the project/database folder.
+    - Click **Import** to fill the required tables and data.
 
 6.  **Project Execution:** Open a web browser and navigate to:
     ```
     http://localhost/BarangaySystem/views/login.php
     ```
-    *Note: Accessing the system requires starting from the Login page to initialize the secure session.*
+    *Note: In order to access the system, one has to begin with the login page to initialize the secure session.*
 
 ---
 
