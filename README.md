@@ -7,9 +7,9 @@
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
 
-**BarangaySystem** is a dedicated web-based information system designed to modernize the administrative operations of **Barangay 52 Zone 4**. It serves as a centralized database that transitions the barangay from manual pen-and-paper filing to a secure, searchable, and efficient digital record-keeping system.
+**BarangaySystem** is an informatics platform that is a specialized web-based system designed to modernize administrative processes of the **Barangay 52 Zone 4**. It can also serve as a centralized database, facilitating the replacement of manual pen and paper archival methods with a safe, searchable and effective digital record keeping system.
 
-The application is architected to assist the **Barangay Secretary and Chairman** in managing population data, generating reports, and ensuring data integrity within the local government unit. It features a clean, professional interface built with **Bootstrap 5** to ensure responsiveness and usability on official barangay computers.
+The architecture of the system is to assist the **Barangay Secretary and Chairman** in the administration of the demographic information, creation of administrative reports, and data integrity in the local governing body. Its user interface is built on **Bootstrap 5**, which also ensures responsiveness and usability on official barangay computing systems by giving it a clean and professional look.
 
 ---
 
@@ -18,12 +18,12 @@ The application is architected to assist the **Barangay Secretary and Chairman**
 The platform focuses on administrative efficiency and data security, featuring a streamlined portal for officials:
 
 ### 🏛️ Administrative Portal (Secretary & Chairman)
-- **Secure Access Control:** Implements role-based authentication using **password hashing (`password_hash`)** and strict session management to prevent unauthorized access to sensitive resident data.
-- **Resident Enrollment (Fill-Out Form):** A modern, responsive intake form for registering new residents, capturing essential demographics (Age, Gender, Civil Status), socio-economic data, and health records (Vaccine Brand).
-- **Advanced Data Management (CRUD):** Full capability to **Create, Read, Update, and Delete** resident records via a centralized dashboard.
-- **Smart Search & Filtering:** A robust search engine capable of filtering residents by Name, Address, Status (Senior, PWD, Solo Parent), or specific keywords instantly.
-- **Dynamic Pagination:** Handles large datasets efficiently by splitting records into navigable pages with customizable entry limits (10/50/100).
-- **Data Privacy Compliance:** The system structure is designed with privacy in mind, ensuring critical contact details are managed securely within the local environment.
+- **Secure Access Control:** Applies role based authentication through **password hashing (password hash)** along with a strict system of session control to avoid involvement of unauthorized access to the sensitive resident information.
+- **Resident Enrollment (Fill-Out Form):** The new responsive digital intake form of registering new residents, including demographics (Age, Gender, Civil Status), socio-economic and health information (Vaccine Brand).
+- **Advanced Data Management (CRUD):** Complete access to **Create**, **Read**, **Update**, and **Delete** resident records through an easy to use centralized dashboard.
+- **Smart Search & Filtering:** A powerful search engine that allows to filter residents by Name, Address, Status (Senior, PWD, Solo Parent) or specific keywords immediately.
+- **Dynamic Pagination:** It is an efficient way to work with large datasets, managing records into navigable pages with adjustable entry points (10/50/100).
+- **Data Privacy Compliance:** The system is architected with privacy concerns, and critical contact information is kept securely in the local surrounding.
 
 ---
 
