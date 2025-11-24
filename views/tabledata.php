@@ -180,7 +180,9 @@ include('../config/conn.php');
                                 <td class="text-center">
                                     <div class="btn-group" role="group">
                                         <a href="edit.php?id=<?= $row['residentno'] ?>" class="btn btn-sm btn-warning" title="Edit"><i class="fa-solid fa-pen"></i></a>
-                                        <a href="#" onclick="confirmDelete(<?= $row['residentno'] ?>)" class="btn btn-sm btn-danger" title="Delete"><i class="fa-solid fa-trash"></i></a>
+                                        <button onclick="prepareDelete(<?= $row['residentno'] ?>)" class="btn btn-sm btn-danger" title="Delete"> 
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
                                     </div>
                                 </td>
                             </tr>
@@ -243,15 +245,55 @@ include('../config/conn.php');
                     </ul>
                 </nav>
             </div>
-
-        </div>
-    </div>
-</div>
+            <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-3 shadow-lg border-0">
+                        <!-- Header -->
+                         <div class="modal-header bg-danger text-white border-0">
+                            <h5 class="modal-title fw-bold">
+                                <i class="fa-solid fa-triangle-exclamation me-2"></i> Confirm Deletion
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- Body -->
+                         <div class="modal-body text-center py-4">
+                            <div class="text-danger mb-3">
+                                <i class="fa-solid fa-trash-can fa-3x"></i>
+                            </div>
+                            <p class="mb-1 fs-5 text-dark fw-semibold">Are you sure you want to delete?</p>
+                            <p class="small text-muted">This will permanently remove the record.</p>
+                        </div>
+                        <!-- Footer -->
+                         <div class="modal-footer border-0 justify-content-center pb-4">
+                            <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                            <!-- This button triggers the actual deletion -->
+                             <button type="button" class="btn btn-danger px-4 rounded-pill fw-bold" onclick="executeDelete()">Delete Record</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    function changeTableSize(val) { window.location.search = '?show=' + val; }
-    function confirmDelete(id) { if(confirm('Are you sure you want to permanently delete this record?')) window.location.href = '../actions/delete.php?id=' + id; }
+    // Variable to hold the ID we want to delete
+    let deleteId = 0;
+
+    // 1. Function called when you click the Trash Icon
+    function prepareDelete(id) {
+        deleteId = id; // Store the ID
+        // Open the Bootstrap Modal
+        var myModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+        myModal.show();
+    }
+
+    // 2. Function called when you click "Delete Record" inside the Modal
+    function executeDelete() {
+        if (deleteId > 0) {
+            // Redirect to your actual delete PHP script
+            // Note: Updated path based on your new folder structure
+            window.location.href = '../actions/delete.php?id=' + deleteId;
+        }
+    }
 </script>
 
 </body>
